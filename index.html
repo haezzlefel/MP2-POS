@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark fs-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">  <img src="./images /pos1.png" alt=""> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Register .</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Cashier Log in</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Reports
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a>Reports</li>
+                <li><a class="dropdown-item" href="#"></a>Reports</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-----navbar end---->
+
+    <div class="bg-dark py-3 px-5">
+        <div class="row bg-light">
+            <div class="col-sm-8">
+              <div class="card m-3">
+                <div class="card-body d-flex justify-content-between align-items-center pb-0">
+                  <div>
+                    <small>Date and Time: <span id="cdt" class="fw-bold"></span></small>
+                  </div>
+                  <div>
+                    <button class="btn btn-secondary mb-3">Logout</button>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div class="card m-3">
+                <div class="card-body">
+                  <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-menu1-tab" data-bs-toggle="pill" data-bs-target="#pills-menu1" type="button" role="tab" aria-controls="pills-menu1" aria-selected="true" style="background-color:#636263";>Swimwear</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" style="background-color:#636263" id="pills-menu2-tab" data-bs-toggle="pill" data-bs-target="#pills-menu2" type="button" role="tab" aria-controls="pills-menu2" aria-selected="false">Footwear</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" style="background-color:#636263" id="pills-menu3-tab" data-bs-toggle="pill" data-bs-target="#pills-menu3" type="button" role="tab" aria-controls="pills-menu3" aria-selected="false">Equipment</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" style="background-color:#636263" id="pills-menu4-tab" data-bs-toggle="pill" data-bs-target="#pills-menu4" type="button" role="tab" aria-controls="pills-menu4" aria-selected="false">Accessories</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card m-3">
+                <div class="card-body">
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-menu1" role="tabpanel" aria-labelledby="pills-menu1-tab">
+                      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-5 g-4">
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 1', 499.99);">
+                            <img draggable="false" src="./images /1pcblue.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 1</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 2', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 2</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 3', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 3</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 4', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 4</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 5', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 5</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 6', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 6</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 7', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 7</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 8', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 8</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 9', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 9</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 10', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 10</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 11', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 11</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 12', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 12</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 13', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 13</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 14', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 14</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 15', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 15</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 16', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 16</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 17', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 17</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Swimsuit 18', 499.99);">
+                            <img draggable="false" src="./images/1pcblue" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Swimsuit 18</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-menu2" role="tabpanel" aria-labelledby="pills-menu2-tab">
+                      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-5 g-4">
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Footwear 1', 499.99);">
+                            <img draggable="false" src="img/fw1.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Footwear 1</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Footwear 2', 499.99);">
+                            <img draggable="false" src="img/fw1.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Footwear 2</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Footwear 3', 499.99);">
+                            <img draggable="false" src="img/fw1.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Footwear 3</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Footwear 4', 499.99);">
+                            <img draggable="false" src="img/fw1.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Footwear 4</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-menu3" role="tabpanel" aria-labelledby="pills-menu3-tab">
+                      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-5 g-4">
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Equipment 1', 499.99);">
+                            <img draggable="false" src="img/eq1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Equipment 1</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Equipment 2', 499.99);">
+                            <img draggable="false" src="img/eq1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Equipment 2</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Equipment 3', 499.99);">
+                            <img draggable="false" src="img/eq1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Equipment 3</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Equipment 4', 499.99);">
+                            <img draggable="false" src="img/eq1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Equipment 4</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-menu4" role="tabpanel" aria-labelledby="pills-menu4-tab">
+                      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-5 g-4">
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Accessory 1', 499.99);">
+                            <img draggable="false" src="img/acce1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Accessory 1</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Accessory 2', 499.99);">
+                            <img draggable="false" src="img/acce1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Accessory 2</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Accessory 3', 499.99);">
+                            <img draggable="false" src="img/acce1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Accessory 3</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" onclick="ordercart('Accessory 4', 499.99);">
+                            <img draggable="false" src="img/acce1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <small>Accessory 4</small>
+                              <p class="card-text fw-bold text-secondary">P 499.00</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            
+            </div>
+            <div class="col-sm-4">
+                <div class="card m-3">
+                    <div class="card-body pb-0">
+                        <h6 class="d-flex justify-content-between align-items-center"><span>Purchased Items</span><button class="btn btn-sm btn-secondary" onclick="cartClear()">Clear</button></h6>
+                    </div>
+                    <hr>
+                    <ul id="ordersummary" class="list-unstyled p-3" style="height: 30vh; overflow-y: auto;">
+                    </ul>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="px-3">Total Items:</p><p class="card-text px-3 fw-bold" id="totalitems">0</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="px-3">Total Amount:</p><p class="fw-bold">P<span class="card-text px-3 fw-bold" id="totalcost">0</span></p>
+                      </li>
+                      <li class="text-center">
+                        <button class="btn btn-secondary btn-lg w-50">CHECK OUT</button>
+                      </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+  <script src="js/pos.js"></script> 
+  <script src="js/dt.js"></script> 
+
+</body>
+</html>
