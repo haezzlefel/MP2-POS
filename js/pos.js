@@ -37,7 +37,7 @@ function ordercart(itemname, itemprice){
 
     deletebutton.appendChild(deletebuttontext);
 
-    deletebutton.className = 'btn btn-secondary rounded';
+    deletebutton.className = 'btn btn-dark rounded';
 
     //Append item to LI
     orderitem.appendChild(orderitemname);
