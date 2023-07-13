@@ -17,20 +17,20 @@ body{
     align-items: center;
     height: 100vh;
     width: 100%;
-    background:  url("./images/cart2.jpeg");
+    background-color: #08081b;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 form{
-    background-color: #ffffff45;
+    background-color: #44debd45;
     width: 550px;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px #ffffff63, 0px 0px 10px #ffffff3c;
-    background-color: #00000028;
-    color: #1515c5;
+    box-shadow: 0px 0px 15px #20090963, 0px 0px 10px #d11e1e3c;
+    background-color: #ffffffce;
+    color: #08081b;
 }
 form p{
     font-size: 25px;
@@ -50,15 +50,15 @@ form p{
     height: 45px;
     padding: 10px;
     background-color: transparent;
-    border: 1px solid #ddd;
+    border: 1px solid #c3c0c0;
     border-radius: 5px;
-    color: rgb(26, 34, 180);
+    color: rgb(92, 96, 170);
     font-size: 16px;
     outline: none;
     transition: all .5s ease;
 }
 .form-control input:focus{
-    box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px rgb(16, 15, 15);
 }
 .form-control input::placeholder{
     color: rgb(40, 37, 37);
@@ -70,13 +70,13 @@ form p{
     outline: none;
     border-radius: 5px;
     font-size: 16px;
-    background-color: #aaa;
-    color: #100303;
+    background-color: #111010;
+    color: #fbf7f7;
     cursor: pointer;
     transition: all .5s ease;
 }
 .form-control button:hover{
-    background-color: #ddd;
+    background-color: #142554;
 }
 .form-control a{
     margin-top: .5rem;
@@ -84,12 +84,17 @@ form p{
     color: #161212;
 }
 
-.container .coder{
+.container .z{
     position: absolute;
     bottom: 10px;
     right: 10px;
     color: #dddddd;
 }
+#s {
+    text-align: center;
+    text-decoration: none;
+    
+  }
 
 /* responsive ness  */
 @media (min-width: 300px) and (max-width: 700px) {
