@@ -124,7 +124,7 @@ function authentication() {
     
     var pincode = document.getElementById('pindisplay').value;
     if(pincode === "123456"  && clerknamedisplay.value === "Cyril John") {
-        window.location.assign("./page1.html");
+        window.location.assign("page1.html");
         alert("Hi Cyril John. You are now logged in.")
     } else if (pincode === "000000"  && clerknamedisplay.value === "Hazel Fel") {
         window.location.assign("page1.html");
