@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./clerk.css">
+    <link href='https://fonts.googleapis.com/css?family=Sulphur Point' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>account create and login</title>
+</head>
+<body style="background-color:rgb(6, 0, 0); height: 100vh";>
+
+<div class="container col-sm-6 " mx-auto p-2 style="max-height: 80vh;"> 
+    <div class="rounded p-4 shadow" style="background-color: rgb(232, 230, 223);">
+        <h5>Create Cashier Account</h5>
+        <div class="form-floating mb-3">
+        <input type="text" value="" class="form-control" id="addclerkname" placeholder="Cashier Name" required>
+        <label for="clerkname" class="form-label text-muted fw-bold">User name</label>
+        <div class="valid-feedback">Good to go! </div>
+        <div class="invalid-feedback">Enter New Cashier Name</div>
+        </div>
+
+        <div class="form-floating mb-3">
+        <input type="password" class="form-control" value="" id="addpin" placeholder="Enter Pin Number" required>
+        <label for="pin" class="form-label text-muted fw-bold">Enter Pin Number</label>
+        <div class="valid-feedback">Good to go! </div>
+        <div class="invalid-feedback">Enter Correct Pin</div>
+        </div>
+
+        <button onclick="addclerk(), selectaudio.play()" type="submit" class="btn btn-dark text">Submit</button>
+    </div>
+    </div>
+</div> 
+<br>
+
+<div class="container col-sm-6 rounded p-4 shadow" style="background-color:  rgb(232, 230, 223);"> 
+        <form name="loginform" class="needs-validation">
+
+        <div class="form-floating mb-3">
+        <input type="text" value="" class="form-control" id="clerknamedisplay" placeholder="Clerk On Duty" disabled required>
+        <label for="clerkname" class="form-label text-muted fw-bold">Cashier Logged in</label>
+        <div class="valid-feedback">Good to go! </div>
+        <div class="invalid-feedback">Select Cashier Name Below</div>
+        </div>
+
+        <div class="form-floating mb-3">
+        <input type="password" class="form-control" value="" id="pindisplay" placeholder="Enter Pin Number" required>
+        <label for="pin" class="form-label text-muted fw-bold">Enter Pin Number</label>
+        <div class="valid-feedback">Good to go! </div>
+        <div class="invalid-feedback">Enter Correct Pin</div>
+        </div>
+        <button onclick="authentication()" type="submit" class="btn btn-dark">Login</button>
+        </form>
+        <hr>
+        <div class="mx-auto row" style="width: 100%;">
+
+            <div class="container mx-auto col-sm-12">
+            <div class="container mx-auto row" id="clerknamebuttoncon">
+            <div class=" mb-2 col-md-6">
+                <button value="Cyril John" id="clerk1" onclick="clerk1()" type="button" class="btn btn-dark" >Cyril John</button></div>
+            <div class=" mb-2 col-md-6">
+                <button value="Hazel Fel" id="clerk2" onclick="clerk2()" type="button" class="btn btn-dark" >Hazel Fel</button></div>
+            </div>
+            </div>       
+            <hr>
+        </div>
+    </div>     
+</div> 
+<script src="./js/clerk.js"></script>
+
+</body>
+</html>

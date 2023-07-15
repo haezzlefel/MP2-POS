@@ -8,23 +8,22 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    min-height: 100vh;
-    width: 100%;
+    min-height: 75vh;
+    width: 75%;
 }
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-color: #08081b;
+    height: 50vh;
+    width: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 form{
-    background-color: #44debd45;
+    background-color: #09090945;
     width: 550px;
     padding: 1rem;
     border-radius: 10px;
@@ -78,26 +77,10 @@ form p{
 .form-control button:hover{
     background-color: #142554;
 }
-.form-control a{
-    margin-top: .5rem;
-    display: block;
-    color: #161212;
-}
 
-.container .z{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: #dddddd;
-}
-#s {
-    text-align: center;
-    text-decoration: none;
-    
-  }
 
 /* responsive ness  */
-@media (min-width: 300px) and (max-width: 700px) {
+@media (min-width: 100px) and (max-width: 100px) {
     .container{
         width: 100%;
     }
