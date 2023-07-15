@@ -29,13 +29,11 @@ var forms = document.querySelectorAll('.needs-validation')
   }
   
   function clerk1() {
-  
     clerknamedisplay.value = clerk1name.value
     selectaudio.play()
   };
 
   function clerk2() {
-  
     clerknamedisplay.value = clerk2name.value
     selectaudio.play()
   };
@@ -70,18 +68,17 @@ var forms = document.querySelectorAll('.needs-validation')
 
 
 const audio = new Audio();
-audio.src = "";
+audio.src = "tonebeep.mp3";
 audio.volume = .1;
 
 const selectaudio = new Audio();
-selectaudio.src = "#"
+selectaudio.src = "tonebeep.mp3"
 selectaudio.volume = 1;
 
 window.history.forward();
 function noBack() {
     window.history.forward();
 }
-
 
 function addclerk() {
     let namebuttoncon = document.getElementById('clerknamebuttoncon')
@@ -127,11 +124,11 @@ function authentication() {
     
     var pincode = document.getElementById('pindisplay').value;
     if(pincode === "123456"  && clerknamedisplay.value === "Cyril John") {
-        window.location.assign("page1.html");
+        window.location.assign("./page1.html");
         alert("Hi Cyril John. You are now logged in.")
     } else if (pincode === "000000"  && clerknamedisplay.value === "Hazel Fel") {
         window.location.assign("page1.html");
-        alert("Hi Hazel Fel You are now logged in.")
+        alert("Hi Hazel Fel .You are now logged in.")
     
     } else if (pincode == getpin  && clerknamedisplay.value == getname) {
         window.location.assign("page1.html");
