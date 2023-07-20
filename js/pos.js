@@ -22,13 +22,13 @@ function ordercart(itemname, itemprice){
     const orderitemname = document.createTextNode(itemname);
     const orderitemprice = document.createTextNode(' P ' + itemprice);
     // Price color red
-    orderitempricespan.className = 'text-danger';
+    orderitempricespan.className = 'text-secondary';
     orderitempricespan.appendChild(orderitemprice);
     const deletebutton = document.createElement('button');
     const deletebuttontext = document.createTextNode('Remove');
     deletebutton .setAttribute('onclick', 'deleteItem('+i+', this)');
     deletebutton.appendChild(deletebuttontext);
-    deletebutton.className = 'btn btn-dark btn-sm rounded-pill';
+    deletebutton.className = 'btn btn-dark btn-sm rounded';
     //Append item to LI
     orderitem.appendChild(orderitemname);
     orderitem.appendChild(orderitempricespan);
